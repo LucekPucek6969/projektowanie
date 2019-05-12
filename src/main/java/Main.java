@@ -1,4 +1,5 @@
 import algorytmy.BinarySearch;
+import algorytmy.LiczbyPierwsze;
 import algorytmy.NWD;
 import algorytmy.NWW;
 import struktury_danych.StosTablice;
@@ -19,8 +20,19 @@ public class Main {
 //        new ONP().uruchom();
         //          wywolajLista();
         //      wywolajBinarySearch();
-        wywolajNWD();
-        wywolajNWW();
+        //      wywolajNWD();
+        //     wywolajNWW();
+        wywolajLiczbyPierwsze();
+
+    }
+
+    public static void wywolajLiczbyPierwsze() {
+
+        int rozmiar = 1012345;
+
+        LiczbyPierwsze liczbyPierwsze = new LiczbyPierwsze();
+
+        liczbyPierwsze.utworzSito(rozmiar);
 
     }
 
