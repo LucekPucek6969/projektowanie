@@ -18,22 +18,25 @@ public class Main {
 //        wywolajStosLista();
 //        wywolajKolejkaLista();
 //        new ONP().uruchom();
-        //          wywolajLista();
+//        wywolajLista();
         //      wywolajBinarySearch();
         //      wywolajNWD();
-        //     wywolajNWW();
+        //       wywolajNWW();
         wywolajLiczbyPierwsze();
 
     }
 
     public static void wywolajLiczbyPierwsze() {
 
-        int rozmiar = 1012345;
+        int rozmiar = 2016;
 
         LiczbyPierwsze liczbyPierwsze = new LiczbyPierwsze();
 
         liczbyPierwsze.utworzSito(rozmiar);
 
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(5));
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(201));
+        System.out.println(liczbyPierwsze.czyPierwszaPrzezSito(17));
     }
 
 

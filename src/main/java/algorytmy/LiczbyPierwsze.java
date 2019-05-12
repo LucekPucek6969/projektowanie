@@ -33,4 +33,8 @@ public class LiczbyPierwsze {
         }
 
     }
+
+    public boolean czyPierwszaPrzezSito(int liczba) {
+        return sito[liczba];
+    }
 }
