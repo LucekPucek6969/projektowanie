@@ -1,8 +1,8 @@
-import algorytmy.ONP;
-import jdk.nashorn.internal.runtime.arrays.ArrayIndex;
+import algorytmy.BinarySearch;
+import algorytmy.NWD;
+import algorytmy.NWW;
 import struktury_danych.StosTablice;
 import struktury_danych.Tablice;
-import struktury_danych.kolejka.KolejkaElem;
 import struktury_danych.kolejka.KolejkaLista;
 import struktury_danych.lista.Lista;
 import struktury_danych.stos.StosLista;
@@ -17,10 +17,45 @@ public class Main {
 //        wywolajStosLista();
 //        wywolajKolejkaLista();
 //        new ONP().uruchom();
-           wywolajLista();
+        //          wywolajLista();
+        //      wywolajBinarySearch();
+        wywolajNWD();
+        wywolajNWW();
+
     }
 
 
+    public static void wywolajNWW() {
+        int a = 12;
+        int b = 3;
+        int wynik = NWW.oblicz(a, b);
+        System.out.println("Wynik NWW: " + wynik);
+    }
+
+
+    public static void wywolajNWD() {
+        int a = 66;
+        int b = 12;
+        NWD nwd = new NWD();
+        int wynik = nwd.odejmowanie(a, b);
+
+        System.out.println(String.format("Wynik NWD.odejmowanie(%d,%d)=%d", a, b, wynik));
+
+        int wynikDzielenia = nwd.resztaZDzielenia(a, b);
+        System.out.println(String.format("Wynik NWD.resztaDzielenia(%d,%d)=%d", a, b, wynikDzielenia));
+
+    }
+
+    public static void wywolajBinarySearch() {
+        int tab[] = new int[20];
+        for (int i = 0; i < tab.length; i++) {
+            tab[i] = i;
+
+        }
+
+        BinarySearch binarySearch = new BinarySearch();
+        binarySearch.find(tab, 5);
+    }
 
 
     public static void wywolajLista() {
